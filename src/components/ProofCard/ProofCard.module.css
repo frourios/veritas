@@ -1,0 +1,256 @@
+.proofCard {
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 10%),
+    0 1px 2px 0 rgb(0 0 0 / 6%);
+  transition: border-color 0.2s ease;
+}
+
+.detailCard {
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 0.75rem;
+}
+
+[data-theme='dark'] .proofCard {
+  box-shadow:
+    0 1px 3px 0 rgb(0 0 0 / 20%),
+    0 1px 2px 0 rgb(0 0 0 / 12%);
+}
+
+.proofHeader {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.detailCard .proofHeader {
+  margin-bottom: 1.5rem;
+}
+
+.proofTitle {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.detailTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.proofTitleLink {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.proofTitleLink:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+[data-theme='dark'] .proofTitleLink {
+  color: #60a5fa;
+}
+
+[data-theme='dark'] .proofTitleLink:hover {
+  color: #93c5fd;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.badgeContainer {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.detailCard .badgeContainer {
+  gap: 0.75rem;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 0.25rem;
+}
+
+.detailCard .badge {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+}
+
+.versionBadge {
+  color: #1e40af;
+  background-color: #dbeafe;
+}
+
+[data-theme='dark'] .versionBadge {
+  color: #93c5fd;
+  background-color: #1e3a8a;
+}
+
+.languageBadge {
+  color: #374151;
+  background-color: #f3f4f6;
+}
+
+[data-theme='dark'] .languageBadge {
+  color: #d1d5db;
+  background-color: #374151;
+}
+
+.section {
+  margin-bottom: 0.75rem;
+}
+
+.detailCard .section {
+  margin-bottom: 1rem;
+}
+
+.sectionHeader {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sectionLabel {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.detailCard .sectionLabel {
+  margin-bottom: 0.375rem;
+}
+
+.sectionContent {
+  color: var(--text-color);
+}
+
+.detailCard .sectionContent {
+  font-size: 1rem;
+}
+
+.authorEmail {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.6;
+}
+
+.cidText {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  word-break: break-all;
+}
+
+.detailCard .cidText {
+  padding: 0.5rem;
+  background-color: var(--button-bg);
+  border-radius: 0.25rem;
+}
+
+.referencesList {
+  padding-left: 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-color);
+}
+
+.detailCard .referencesList {
+  padding-left: 1.5rem;
+}
+
+.referenceItem {
+  margin-bottom: 0.25rem;
+  word-break: break-all;
+}
+
+.detailCard .referenceItem {
+  margin-bottom: 0.375rem;
+}
+
+.proofFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  border-top: 1px solid var(--border-color);
+  opacity: 0.6;
+}
+
+.detailCard .proofFooter {
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.previousProof {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.detailCard .previousProof {
+  margin-top: 1rem;
+}
+
+@media (width <= 768px) {
+  .proofCard {
+    padding: 1rem;
+  }
+
+  .detailCard {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .proofHeader {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+
+  .detailCard .proofHeader {
+    gap: 1rem;
+  }
+
+  .proofTitle {
+    font-size: 1.125rem;
+  }
+
+  .detailTitle {
+    font-size: 1.5rem;
+  }
+
+  .proofFooter {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+}

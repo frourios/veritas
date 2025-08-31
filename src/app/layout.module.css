@@ -1,0 +1,10 @@
+.mainContent {
+  min-height: calc(100vh - 4rem);
+  padding-top: 0;
+}
+
+@media (width <= 768px) {
+  .mainContent {
+    min-height: calc(100vh - 3.5rem);
+  }
+}
